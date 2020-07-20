@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font Awesome Import Start -->
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Import End -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/profile.css" rel="stylesheet" />
+
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KhanaJam | $(Profile.name)</title>
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="profile-upper-box">
+        <div class="profile-image-box" id="hotel">
+          <!-- Here id is either customer or hotel, there is css like #customer or #hotel, so use variable like that -->
+          <img alt="$(profile.name) Image" src="/assets/hotel.jpg" />
+        </div>
+        <div class="profile-details-box" id="hotel">
+          <div class="profile-details-box-left">
+            <ul>
+              <li>
+                <i class="far fa-user"></i>
+                Name
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                Phone
+              </li>
+              <li>Other Details</li>
+            </ul>
+          </div>
+          <div class="profile-details-box-right">
+            <span class="message-edit">
+              <div class="message">
+                <i class="far fa-envelope"></i>
+                <a href="/message.html">Message</a>
+              </div>
+              <div class="edit">
+                <i class="fas fa-user-edit"></i>
+                Edit
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="profile-next-upper-box">
+        <div class="Food-display-section-1">
+          <h3>Last Ordered Foods</h3>
+          <!-- <div class="top-sell-foods-section">
+              <h3>Top Sell of the Week</h3> -->
+          <!-- uncomment this for hotel case -->
+          <!-- In this Section There will be Top Sell of the hotel section, everything is same just the text ordered Food section inside <h3>  tag will be changed -->
+          <!-- How food is displayed section for grid works -->
+          <div class="food-grid-display">
+            <!-- Product work starts-->
+            <div class="overall-box">
+              <div class="top-food">
+                <div class="plate food-1">
+                  <img alt="Food-1" src="/assets/header.jpg" />
+                  <div class="overlay-details">
+                    <div class="food details">
+                      <h4>Food</h4>
+                      <h4>Rate</h4>
+                      <h4>Rating 1</h4>
+                    </div>
+                    <div class="cart">
+                      <button class="bag-btn order">
+                        <a href="/order-form.html">
+                          <i class="fas fa-shopping-cart"></i>
+                          Add to Cart
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product work ends -->
+          </div>
+        </div>
+        <div class="food-display-section-2">
+          <h3>Most Ordered Foods</h3>
+          <!-- In this section in case for Hotels, there will be all foods available section -->
+          <!-- How food is displayed section for grid works -->
+          <div class="food-grid-display">
+            <!-- Product work starts-->
+            <div class="overall-box">
+              <div class="top-food">
+                <div class="plate food-1">
+                  <img alt="Food-1" src="/assets/header.jpg" />
+                  <div class="overlay-details">
+                    <div class="food details">
+                      <h4>Food</h4>
+                      <h4>Rate</h4>
+                      <h4>Rating 1</h4>
+                    </div>
+                    <div class="cart">
+                      <button class="bag-btn order">
+                        <a href="/order-form.html">
+                          <i class="fas fa-shopping-cart"></i>
+                          Add to Cart
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product work ends -->
+          </div>
+        </div>
+
+        <!-- Start of Tranisition table -->
+
+        <div class="all-transition">
+          <h3>All Your Tranisitions</h3>
+          <div class="all-tranisition-table">
+            <table>
+              <tr>
+                <th>S.N</th>
+                <th>TimeStamp</th>
+                <th>Food Name</th>
+                <th>Hotel</th>
+                <!-- In this line Customer Id will be used insted of Hotel everything else is same in transition section, For refrence everything is given below-->
+                <th>Total Price</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2019-05-06 / 12:55:26</td>
+                <td>Pizza</td>
+                <td>Bibek Hotel And Restaurant</td>
+                <td>Rs. 2000</td>
+                <td>Completed</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <div class="hotel"></div> -->
+  <!-- Hotel-Profile-starts -->
+  <!-- Main Conatiner Starts -->
+  <!-- <div class="hotel-profile-container"> -->
+  <!-- upper container starts -->
+  <!-- <div class="hotel-profile-container-upper-box">
+          <div class="hotel-profile-upper-box"> -->
+  <!-- Profile Picture Section -->
+  <!-- <div class="hotel-profile-image-box">
+              <img alt="$(hotel-profile.name) Image" src="/assets/hotel.jpg" />
+            </div> -->
+  <!-- Profiel details like name, address, and other -->
+  <!-- <div class="hotel-profile-details-box">
+              <div class="hotel-profile-details-box-left">
+                <ul>
+                  <li>
+                    <i class="far fa-user"></i>
+                    Name
+                  </li>
+                  <li>
+                    <i class="fas fa-phone-alt"></i>
+                    Phone
+                  </li>
+                  <li>
+                    <address>
+                      Address
+                    </address>
+                  </li>
+                  <li>Other Details</li>
+                </ul>
+              </div> -->
+  <!-- Message ra edit wala section -->
+  <!-- <div class="hotel-profile-details-box-right">
+                <span class="message-edit"> -->
+  <!-- Message Section -->
+  <!-- <div class="message">
+                    <i class="far fa-envelope"></i>
+                    Message
+                  </div> -->
+  <!-- edit section -->
+  <!-- <div class="edit">
+                    <i class="fas fa-user-edit"></i>
+                    Edit
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+  <!-- Upper section finished -->
+  <!-- Food Section starts -->
+  <!-- <div class="hotel-profile-food-section"> -->
+  <!-- Top sell section -->
+  <!-- <div class="top-sell-foods-section">
+            <h3>Top Sell of the Week</h3> -->
+  <!-- How food is displayed section for grid works -->
+  <!-- <div class="food-grid-display"> -->
+  <!-- Product work starts-->
+  <!-- <div class="overall-box">
+                <div class="top-food">
+                  <div class="plate food-1">
+                    <img alt="Food-1" src="/assets/header.jpg" />
+                    <div class="overlay-details">
+                      <div class="food details">
+                        <h4>Food</h4>
+                        <h4>Rate</h4>
+                        <h4>Rating 1</h4>
+                      </div>
+                      <div class="cart">
+                        <button class="bag-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+  <!-- Product work ends -->
+  <!-- </div>
+          </div>
+          <div class="all-foods-section">
+            <h3>All foods Available</h3> -->
+  <!-- How food is displayed section for grid works -->
+  <!-- <div class="food-grid-display"> -->
+  <!-- Product work starts-->
+  <!-- <div class="overall-box">
+                <div class="top-food">
+                  <div class="plate food-1">
+                    <img alt="Food-1" src="/assets/header.jpg" />
+                    <div class="overlay-details">
+                      <div class="food details">
+                        <h4>Food</h4>
+                        <h4>Rate</h4>
+                        <h4>Rating 1</h4>
+                      </div>
+                      <div class="cart">
+                        <button class="bag-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+  <!-- Product work ends -->
+  <!-- </div>
+          </div>
+        </div> -->
+  <!-- Start of Tranisition table -->
+  <!-- <div class="all-transition">
+          <h3>All Your Tranisitions</h3>
+          <div class="all-tranisition-table">
+            <table>
+              <tr>
+                <th>S.N</th>
+                <th>TimeStamp</th>
+                <th>Food Name</th>
+                <th>Customer id</th>
+                <th>Total Price</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2019-05-06 / 12:55:26</td>
+                <td>Pizza</td>
+                <td>jasdfljsdalfjsadlf</td>
+                <td>Rs. 2000</td>
+                <td>
+                  Completed
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div> -->
+  <!-- </div> -->
+</html>

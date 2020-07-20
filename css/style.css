@@ -1,0 +1,370 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 1s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+body {
+  letter-spacing: var(--mainLetterSpacing);
+  overflow-x: hidden;
+  transition: var(--mainTranisition);
+}
+/* importing other CSS starts for desktop view */
+/* @import '/css/home.css'; */
+/* @import url('/css/footer.css'); */
+/* importing other CSS ends for desktop view */
+/* importing for mobile view starts */
+/* @import '/css/mobile_style_home.css' screen and (max-width: 768px); */
+/* importing for mobile view ends */
+
+/* Css for Global Styling */
+
+/* Start of Home body */
+.container {
+  margin: 90px 0 0 0;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+.container .upper-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 0 0;
+  background-image: url('/assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+.upper-body {
+  opacity: 0.9;
+}
+.upper-body-left {
+  background: #ffffff80;
+}
+.container .upper-body h2 {
+  text-transform: uppercase;
+
+  transition: var(--mainTranisition);
+}
+
+.container .upper-body .upper-body-left {
+  display: flex;
+  max-width: 60%;
+  max-height: 80%;
+  min-height: 40%;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10 10px;
+  transition: all 1s ease;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: var(--mainLetterSpacing);
+}
+.container .upper-body .upper-body-left p {
+  margin: 10px;
+}
+.container .upper-body .upper-body-right {
+  align-items: center;
+  justify-content: center;
+  transition: var(--mainTranisition);
+  margin: 10px;
+  width: 50%;
+}
+
+.search-body {
+  background: url(/assets/background-2.jpg) center/cover no-repeat;
+  margin: 1rem 0;
+  opacity: 0.8;
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-body h3 {
+  margin: 1rem 0;
+}
+.search-body .search {
+  background: whitesmoke;
+  opacity: 0.8;
+  margin: 1rem;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+}
+.search-body .search input {
+  background: none;
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+}
+::placeholder {
+  color: red;
+  letter-spacing: var(--mainLetterSpacing);
+}
+
+.body-food-sction,
+.body-hotel-sction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+}
+.body-food-sction .food-grid-display,
+.body-hotel-sction .hotel-grid-display {
+  width: 90vw;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1170px;
+  min-height: 200px;
+  grid-row-gap: 2rem;
+  grid-column-gap: 1.5rem;
+}
+.overall-box,
+.overall-box {
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+}
+.overall-box .top-food,
+.overall-box .top-hotel {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-details {
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  padding: 0.5rem 0.75rem;
+  right: 0;
+  min-height: 50%;
+  transform: translateX(115%);
+  display: none;
+  width: 100%;
+}
+.overlay-details-down {
+  top: 0%;
+  min-height: 10%;
+  transform: translatex(115%);
+}
+.plate img {
+  /* min-height: 240px; */
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.overall-box:hover .overlay-details {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* top: 50%; */
+  text-align: center;
+  align-items: center;
+  transform: translateX(0);
+  transition: 0.5s;
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.overall-box:hover .overlay-details-single {
+  position: relative;
+  width: 75%;
+  transform: translateY(-99%);
+}
+.overall-box:hover .overlay-details .food-details,
+.overall-box:hover .overlay-details .hotel-details {
+  position: relative;
+}
+.overall-box:hover .plate img {
+  opacity: 0.5;
+  transition: 0.5s;
+  transform: scale(1.2);
+  object-fit: cover;
+}
+.overall-box {
+  overflow: hidden;
+}
+.bag-btn,
+.button {
+  background: var(--SecondaryColor);
+  border-radius: 10px;
+  border: none;
+  color: var(--PrimaryBlack);
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  cursor: pointer;
+}
+.bag-btn:hover,
+.button:hover {
+  color: var(--PrimaryWhite);
+}
+.cart button {
+  margin: 5px;
+}
+@media only screen and (max-width: 768px) {
+  /* .container .upper-body {
+    flex-direction: column-reverse;
+  } */
+  .container .upper-body .upper-body-right {
+    display: none;
+  }
+  .overall-box:hover .overlay-details {
+    justify-content: space-around;
+  }
+}
+
+/* End of home body */
+/* order-food css starts */
+.order-container {
+  text-align: center;
+  width: 840px;
+  height: calc(100% - 90px);
+  border: 2px solid var(--SecondaryColor);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+  border-radius: 10px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  margin-left: calc(calc(100vw - 840px) / 2);
+  margin-left: calc(calc(100vw - 840px) / 2);
+}
+.order-container h2 {
+  margin: 0.5rem 0;
+}
+
+.order-container .actual-order-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 90px);
+  background: white;
+  opacity: 1;
+  /* padding: 1rem; */
+  margin: 1rem 0;
+}
+.order-container .actual-order-container .plate {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+  border-radius: 10px;
+}
+.order-container .actual-order-container .plate img {
+  width: 60%;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 60%;
+}
+
+.order-container .actual-order-container .order-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.order-container .actual-order-container .order-form form span {
+  display: flex;
+  margin: 1rem 0;
+}
+.order-container .actual-order-container .order-form form span button,
+.order-container .actual-order-container .order-form form span label,
+.order-container .actual-order-container .order-form form span input {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.order-container .actual-order-container .order-form .food-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+  margin: 1rem 0;
+}
+.order-container .actual-order-container .order-form .food-details h4 {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  justify-content: space-evenly;
+}
+/* 404Error Page Css starts*/
+.error-container {
+  width: 100%;
+  margin: 100px 1rem 0 1rem;
+  height: calc(100vh -100px);
+}
+.error-container .image-section img {
+  width: 90%;
+  height: 400px;
+  margin: 0 5%;
+}
+.error-container .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.error-container .text-section h3,
+h4,
+a {
+  margin: 1rem 0;
+}
+/* 404Error Page Css Ends */
+
+@media only screen and (max-width: 940px) {
+  .order-container {
+    width: 100%;
+
+    margin: 90px 0 10px 0;
+  }
+  .actual-order-container {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+}
+/* order food css ends */

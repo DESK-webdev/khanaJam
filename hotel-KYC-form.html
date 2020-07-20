@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/kyc-form.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>KhanaJam | KYC Form</title>
+</head>
+<body>
+    <!-- This form is displayed after a hotel creates account. But for customer such details wont be asked, there willl be edit section where the same information can be changed and modified. there is also skip bubtton, if clicked skip the information wont be updated of this page but the details of the previous page will be updated.-->
+<div class="form-container">
+    <h3>Fill More Information</h3>
+    <div class="kyc-form">
+        <form action="" method="post" style="display: flex; flex-direction:column;">
+          <span class="no-label">
+            <input type="text" name="" id="kyc-hotelname" placeholder="Enter Hotel Name">
+            <input type="text" name="" id="kyc-address" placeholder="Location">
+            <input type="text" name="" id="kyc-Manager-Name" placeholder="Manager Name">
+          </span>
+            <span>
+                Established In:
+                <input type="date" name="" id="kyc-Establised-in" placeholder="Established In">
+            </span>
+           <span>
+            Opening Time:
+            <input type="time" name="" id="kyc-opening-time" placeholder="Opening Time">
+           </span>
+          <span>
+            Closing Time:
+            <input type="time" name="" id="kyc-closing-time" placeholder="Closing Time">
+          </span>
+          <span>
+            Header Image:
+            
+                <input type="image" src="/assets/file-image-regular.svg" alt="Input Header Image" placeholder="Header Image">
+            </span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+            <span class="down-bottoms">
+                <button type="submi" class="button">Skip</button>
+                <button type="submit" class="button">Sumbit</button>
+            </span>
+        </form>
+    </div>
+    <h5>The information collected won't be shared with anyone.</h5>
+</div>
+</body>
+</html>

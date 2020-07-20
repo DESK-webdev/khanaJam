@@ -1,0 +1,115 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 0.5s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.form-container {
+  font-size: 1.2rem;
+  padding: 90px 0 0 0;
+  text-transform: capitalize;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  margin: 3rem 0;
+  align-items: center;
+  background: url(/assets/background-2.jpg) center/cover no-repeat;
+  justify-content: center;
+  opacity: 0.9;
+}
+.form-container h3,
+.form-container h5 {
+  margin: 1rem;
+}
+.kyc-form {
+  padding: 1rem;
+  background: whitesmoke;
+  opacity: 0.8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin: 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.kyc-form textarea {
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.kyc-form input {
+  margin: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  font-size: 1.2rem;
+  /* border: 2px solid aquamarine; */
+}
+.kyc-form span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kyc-form span.no-label {
+  flex-direction: column;
+}
+.kyc-form span.no-label input {
+  font-size: 1.2rem;
+  width: 100%;
+}
+.kyc-form span.down-bottoms {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* ::placeholder {
+  color: red;
+}
+.button {
+  background: rgba(138, 48, 226, 0.8);
+  border-radius: 10px;
+  border: none;
+  color: var(--PrimaryBlack);
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  cursor: pointer;
+}
+
+.button:hover {
+  scale: 1.11;
+  color: var(--PrimaryWhite);
+} */
+
+@media only screen and (max-width: 940px) {
+  .form-container {
+    width: 100%;
+  }
+  .kyc-form {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .kyc-form input {
+    width: 100%;
+  }
+}

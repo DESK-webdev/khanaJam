@@ -1,0 +1,177 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 0.5s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.food-profile-container {
+  display: flex;
+  margin-top: 90px;
+  flex-direction: column;
+}
+
+.food-profile-container .food-description-section {
+  display: flex;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  min-height: 400px;
+}
+.food-profile-container
+  .food-description-section
+  .food-description-section-left,
+.food-profile-container
+  .food-description-section
+  .food-description-section-right {
+  border: 2px solid var(--SecondaryColor);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: calc(100% / 2 - 2rem);
+}
+.food-profile-container
+  .food-description-section
+  .food-description-section-left {
+  align-items: center;
+}
+.food-profile-container
+  .food-description-section
+  .food-description-section-left
+  img {
+  width: 60%;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 10px 1rem;
+  height: 60%;
+}
+.food-profile-container
+  .food-description-section
+  .food-description-section-left
+  h4 {
+  margin: 10px 1rem;
+}
+h4 i {
+  margin: 10px 1rem;
+}
+.food-profile-container .post-rating {
+  width: calc(100% - 2rem);
+  min-height: 100px;
+  margin: 1rem;
+  border: 1px dotted var(--PrimaryBlack);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+
+  border-radius: 10px;
+  display: flex;
+}
+.food-profile-container .post-rating form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 10px;
+}
+.food-profile-container .post-rating form span {
+  display: flex;
+}
+.food-profile-container .post-rating form .rating {
+  align-items: center;
+  margin: 1rem;
+  justify-content: center;
+}
+.food-profile-container .post-rating form .review {
+  height: 85px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.food-profile-container .post-rating form .review textarea {
+  width: calc(100% - 100px);
+  margin: 5px 10px;
+  height: 60px;
+  resize: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.food-profile-container .post-rating form .review .button {
+  height: 40px;
+}
+.food-profile-container .previous-reviews-section {
+  display: flex;
+  flex-direction: column;
+}
+.food-profile-container .previous-reviews-section .text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.food-profile-container .previous-reviews-section .Review-and-provider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem;
+  width: calc(100% - 2rem);
+  border-radius: 10px;
+  border: 1px dotted var(--PrimaryBlack);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+}
+.food-profile-container .previous-reviews-section .Review-and-provider .user {
+  display: flex;
+  margin: 1rem 1rem 0 1rem;
+  /* justify-content: space-around; */
+  height: 40px;
+
+  align-items: center;
+}
+.food-profile-container
+  .previous-reviews-section
+  .Review-and-provider
+  .user
+  img {
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.food-profile-container .previous-reviews-section .Review-and-provider h5 {
+  margin: 0rem 1rem 1rem 1rem;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 2rem);
+}
+.food-profile-container .previous-reviews-section .review-text {
+  margin: 0 1rem 1rem 1rem;
+  width: calc(100% - 2rem);
+  border-radius: 10px;
+  border: 1px dotted var(--PrimaryBlack);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+}
+@media only screen and (max-width: 940px) {
+  .food-profile-container .food-description-section {
+    flex-direction: column;
+  }
+  .food-profile-container
+    .food-description-section
+    .food-description-section-left,
+  .food-profile-container
+    .food-description-section
+    .food-description-section-right {
+    width: calc(100% - 2rem);
+  }
+}

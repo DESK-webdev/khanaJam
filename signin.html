@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome Import Start -->
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" rel="stylesheet"/>
+        <!-- Font Awesome Import End -->
+        <meta charset="UTF-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="/css/signin.css" rel="stylesheet"/>
+        <link href="css/navbar.css" rel="stylesheet"/>
+        <script src="js/account.js"></script>
+        <title>Khanajam | User Signin</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="main-logo">
+                KhanaJam
+            </div>
+            <div class="Further-pages-navbar page-links">
+                <a href="#">Hotels</a>
+                <a href="#">Foods</a>
+                <a href="#">Profile</a>
+                <a href="#" id="a_login">Login</a>
+                <div class="nightmode">
+                    <i class="far fa-moon"></i>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-list-ul"></i>
+            </div>
+        </nav>
+        <div class="user-container">
+            <div class="login">
+                <div class="login-right">
+                    <div class="upper-text-section">
+                        <h2>Hello, There!</h2>
+                        <p>Login with registered account.</p>
+                    </div>
+                    <div class="social-media-login-sction">
+                        <button class="button">
+                            <i class="fab fa-facebook-square"></i>
+                            <h3>Login With Facebook</h3>
+                        </button>
+                        <button class="button">
+                            <i class="fab fa-google"></i>
+                            <h3>Login With Google</h3>
+                        </button>
+                    </div>
+                    <div class="middle-horizontal-section"></div>
+                    <form action="" method="post">
+                        <div class="fields-section">
+                            <div class="id-password">
+                                <input id="u_name" name="" placeholder="Phone Number +97798....." type="tel"/>
+                                <input id="u_password" placeholder="Password" type="password"/>
+                            </div>
+                            <span class="RememberMe">
+                                <input id="rememberme" name="Remember Me!" type="checkbox" value="Remember Me!"/>
+                                <label for="RememberMe!">Remember Me!</label>
+                            </span>
+                            <button class="button" onclick="login_match()" type="submit">
+                                Log In
+                            </button>
+                        </div>
+                    </form>
+                    <div class="lower-section">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="login-left">
+                    <div class="Text-writing">
+                        <h2>Don't Have A acount?</h2>
+                        <p>
+                            Make In Ease!
+                        </p>
+                    </div>
+                    <div class="login-Account-link">
+                        <button class="button login-Account-link-button" type="submit">
+                            <a href="/signup.html">Create Account</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/js/script.js"></script>
+</html>

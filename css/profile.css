@@ -1,0 +1,248 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 0.5s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.profile-container,
+.hotel-profile-container {
+  padding: 90px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+}
+.profile-container .profile-upper-box {
+  display: flex;
+  min-height: 20px;
+}
+.profile-container .profile-upper-box .profile-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: auto;
+  min-height: 150px;
+  min-width: 150px;
+  margin: 1.2rem;
+  transition: var(--mainTranisition);
+}
+.profile-container .profile-upper-box #hotel {
+  min-width: 300px;
+}
+.profile-container .profile-upper-box .profile-image-box img {
+  border-radius: 50%;
+  min-width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: gold 2px solid;
+  transition: var(--mainTranisition);
+}
+.profile-container .profile-upper-box #hotel img {
+  border-radius: 10px;
+  min-width: 300px;
+}
+.profile-container .profile-upper-box .profile-details-box {
+  background: rgb(189, 159, 159);
+  margin: 1.2rem;
+  width: 100%;
+  border: 1px aquamarine solid;
+  display: flex;
+  justify-content: start;
+  transition: var(--mainTranisition);
+  border-radius: 10px;
+}
+/* .profile-container .profile-upper-box #hotel {
+  width: calc(100% - 400px);
+} */
+.profile-container
+  .profile-upper-box
+  .profile-details-box
+  .profile-details-box-left {
+  display: flex;
+  width: 70%;
+  margin: 5px;
+  justify-content: start;
+  align-items: center;
+}
+.profile-container
+  .profile-upper-box
+  .profile-details-box
+  .profile-details-box-left
+  ul
+  li {
+  text-decoration: none;
+  list-style: none;
+}
+/* Last Ordered Foods */
+.profile-next-upper-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+}
+.Food-display-section-1 .food-grid-display,
+.food-display-section-2 .food-grid-display {
+  width: 90vw;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1170px;
+  min-height: 200px;
+  grid-row-gap: 2rem;
+  grid-column-gap: 1.5rem;
+}
+.Food-display-section-1 h3,
+.food-display-section-2 h3 {
+  text-align: center;
+}
+/* .Food-display-section-1 .food-grid-display .overall-box,
+.food-display-section-2 .food-grid-display .overall-box {
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+}
+.Food-display-section-1 .food-grid-display .overall-box .top-food,
+.food-display-section-2 .food-grid-display .overall-box .top-food {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center; */
+/* } */
+/* .overlay-details {
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  padding: 0.5rem 0.75rem;
+  right: 0;
+  min-height: 50%;
+  transform: translateX(115%);
+  display: none;
+} */
+/* .plate img {
+  min-height: 240px;
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+} */
+
+/* .overall-box:hover .overlay-details {
+  display: flex;
+  justify-content: space-between;
+ 
+  width: 100%;
+  align-items: center;
+  transform: translateX(0);
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.6);
+} */
+/* .overall-box:hover .overlay-details .food-details {
+  position: relative;
+} */
+/* .overall-box:hover .plate img {
+  opacity: 0.5;
+  transition: 0.5s;
+  transform: scale(1.2);
+  object-fit: cover;
+}
+.overall-box {
+  overflow: hidden;
+} */
+
+/* Tranisition Table CSS */
+.profile-container .profile-next-upper-box .all-transition {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+.profile-container
+  .profile-next-upper-box
+  .all-transition
+  .all-tranisition-table {
+  display: flex;
+  position: relative;
+  background: grey;
+  border-radius: 10px;
+  border: 2px solid rgb(40, 197, 124);
+  width: 100%;
+}
+.profile-container
+  .profile-next-upper-box
+  .all-transition
+  .all-tranisition-table
+  table {
+  transition: var(--mainTranisition);
+  width: 100%;
+}
+.profile-container .profile-next-upper-box .all-transition h3 {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.all-transition .all-tranisition-table table tr th,
+.all-transition .all-tranisition-table table tr td {
+  transition: var(--mainTranisition);
+  height: 40px;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+.all-transition .all-tranisition-table table tr {
+  transition: var(--mainTranisition);
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 748px) {
+  .overall-box:hover .overlay-details {
+    justify-content: space-around;
+  }
+  .profile-container .profile-upper-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem;
+  }
+  .profile-container .profile-upper-box .profile-details-box {
+    margin: 5px 5px 5px 5px;
+    border: 2px solid greenyellow;
+    padding: 5px;
+  }
+  .hotel-profile-container .hotel-profile-upper-box #hotel {
+    width: 100%;
+  }
+  .profile-container .profile-upper-box .profile-image-box {
+    margin: 0.5rem;
+  }
+  .all-transition .all-tranisition-table table tr {
+    font-size: 0.5rem;
+    border-radius: 2px;
+  }
+  .all-transition .all-tranisition-table table {
+    width: 100vw;
+    font-size: 0.5rem;
+    transition: var(--mainTranisition);
+    height: 60px;
+    border-radius: 2px;
+    margin: 0.2rem;
+  }
+}

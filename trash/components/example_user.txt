@@ -1,0 +1,1 @@
+["{\"fname\":\"test1\",\"lname\":\"test1\",\"phone\":\"test1\",\"password\":\"test1\",\"type\":\"customer\",\"id\":\"b419b690c005e168a16c3859fd9ac790\"}","{\"fname\":\"test2\",\"lname\":\"test2\",\"phone\":\"test2\",\"password\":\"test2\",\"type\":\"hotel\",\"id\":\"6062d40d5ff4d59040eeed1c0673725e\"}"]

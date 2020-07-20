@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/add-food.css">
+    <title>Add Food</title>
+</head>
+<body>
+    <div class="add-food-container">
+        <div class="text-section">
+            <h1>Add New Food</h1>
+        </div>
+        <div class="form-section">
+            <form action="" method="post">
+                <span>
+                    <label for="GlobalFood">Food Category</label>
+                    <select name="GlobalFood" id="">
+                        <option value="DryMix">Dry Mix</option>
+                        <option value="Momo">Mo:Mo</option>
+                        <option value="others">Others</option>
+                    </select>
+                </span>
+                <input type="text" name="" placeholder="Name of Food" id="">
+<span>                
+    <input type="number" name="" placeholder="Price Per Plate" id="time-price" min="0">
+    <input type="number" name="TimeToCook" placeholder="Normal Time to Cook" id="time-price" min="5">
+</span>
+                <span>
+                    <label for="ImageofFood">Sample Image of Food:</label>
+                    <input type="image" id="image" src="/assets/file-image-regular.svg" alt="">
+                </span>
+                <textarea name="" placeholder="Enter Description" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="button">Sumbit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

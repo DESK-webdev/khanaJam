@@ -1,0 +1,7 @@
+create table login_info (phone varchar(10),password varchar(40),db_id varchar(33));
+create table cks (user_cookie varchar(33),db_id varchar(33),set_time long,expire_time long,cookied_browser varchar(100),type varchar(5));
+create table user_info (db_id varchar(33),fname varchar(10),lname varchar(10),phone varchar(10),type varchar(5),public_id varchar(5));
+create table food_local (id varchar(10),name varchar(30),price smallint,ready_time tinyint,image varchar(30),bio varchar(200),rating tinyint,offset_count tinyint);
+create table food_global (id varchar(10),name varchar(30),category varchar(10),image varchar(30),bio varchar(200));
+create table orders (by varchar(4),food varchar(10),quantity tinyint,time_now long,time_coming long,id varchar(33),status tinyint);
+create table hotel (db_id varchar(33),name varchar(30),location varchar(50),manager varchar(30),established long,open_time varchar(7),close_time varchar(7),image varchar(40),bio varchar(100),phone varchar(10),public_id varchar(4));

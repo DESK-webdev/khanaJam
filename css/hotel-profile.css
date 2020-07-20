@@ -1,0 +1,96 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 1s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.hotel-profile-container {
+  padding: 90px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+  min-height: calc(100vh - 90px);
+}
+.hotel-profile-container .hotel-profile-upper-box {
+  display: flex;
+  min-height: 20px;
+}
+.hotel-profile-container .hotel-profile-upper-box .hotel-profile-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: auto;
+  min-height: 150px;
+  min-width: 300px;
+  margin: 1.2rem;
+  transition: var(--mainTranisition);
+}
+.hotel-profile-container .hotel-profile-upper-box .hotel-profile-image-box img {
+  border-radius: 10px;
+  min-width: 300px;
+  height: 150px;
+  overflow: hidden;
+  border: gold 2px solid;
+  transition: var(--mainTranisition);
+}
+.hotel-profile-container .hotel-profile-upper-box .hotel-profile-details-box {
+  background: rgb(189, 159, 159);
+  margin: 1.2rem;
+  width: calc(100% - 400px);
+  border: 1px red solid;
+  display: flex;
+  justify-content: start;
+  transition: var(--mainTranisition);
+  border-radius: 10px;
+}
+
+.hotel-profile-container
+  .hotel-profile-upper-box
+  .hotel-profile-details-box
+  .hotel-profile-details-box-left {
+  display: flex;
+  width: 70%;
+  margin: 5px;
+  justify-content: start;
+  align-items: center;
+}
+.hotel-profile-container
+  .hotel-profile-upper-box
+  .hotel-profile-details-box
+  .hotel-profile-details-box-left
+  ul
+  li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.bag-btn,
+.button {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
+  border: none;
+  color: var(--PrimaryBlack);
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  cursor: pointer;
+}
+.bag-btn:hover,
+.button:hover {
+  transform: scale(1.11);
+  color: var(--PrimaryWhite);
+}

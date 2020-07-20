@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font Awesome Import Start -->
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Import End -->
+    <link href="/css/navbar.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="main-logo">
+        <h2>KhanaJam</h2>
+        <div class="hamburger">
+          <i class="fas fa-list-ul"></i>
+        </div>
+      </div>
+
+      <div class="Further-pages-navbar page-links">
+        <a href="#">Hotels</a>
+        <a href="#">Foods</a>
+        <div>
+          <div class="Login-profile">
+            <p>
+              P.Name
+            </p>
+            <ul class="dropdown-menus">
+              <li>Profile</li>
+              <li>Messages</li>
+              <li>Logout</li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nightmode">
+          <i class="far fa-moon"></i>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    let login_bottom = document.querySelector('.Login-profile')
+    login_bottom.addEventListener('click', () => {
+      let menus = document.querySelector('.dropdown-menus')
+      menus.classList.toggle('active')
+      console.log('ok')
+      login_bottom.classList.toggle('clicked')
+    })
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      console.log('hello there')
+      document.querySelector('.navbar').classList.toggle('click-hamburger')
+      document
+        .querySelector('.Further-pages-navbar')
+        .classList.toggle('display')
+    })
+  </script>
+</html>

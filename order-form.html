@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome Import Start -->
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" rel="stylesheet"/>
+        <!-- Font Awesome Import End -->
+        <meta charset="UTF-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="/css/style.css" rel="stylesheet"/>
+        <title>Order Form | KhanaJam</title>
+    </head>
+    <body>
+        <!-- order-form starts -->
+        <div class="order-container">
+            <h2>Order Food</h2>
+            <div class="actual-order-container">
+                <!-- Product work starts-->
+                  <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" class="no-scale" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-single">
+                                <div class="food details">
+                                    <h4>Food</h4>
+                                    <h4>Rate</h4>
+                                    <h4>Rating 1</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+                <div class="order-form" id="order-form">
+                    <!-- <div class="food-details">
+                        <h4>
+                            <i class="fas fa-pizza-slice"></i>food.name</h4>
+                        <h4>
+                            <i class="fas fa-star"></i>food.rating</h4>
+                        <h4>
+                            <i class="fas fa-hotel"></i>hotel.name</h4>
+                        <h4>
+                            <i class="fas fa-map-marked"></i>hote.address</h4>
+                    </div> -->
+
+                    <form action="" method="post">
+                        <span>
+                            <label for="time to arrive">Ready food in</label>
+                            <input max="60" min="0" name="time to arrive" oninput="time.value = this.value" step="5" type="range" value="0"/>
+                            <output id="time">0</output>
+                            &nbsp; Minutes
+                        </span>
+                        <br/>
+                        <span>
+                            <label for="No. of Plates">No of Plates</label>
+                            <input max="10" min="0" name="No. of Plates" oninput="plates.value = this.value" step="1" type="range" value="0"/>
+                            <output id="plates">0</output>
+                            &nbsp; Plates
+                        </span>
+                        <span>
+                            <label for="quantity">Quantitiy</label>
+                            <select id="" name="quantity">
+                                <option value="0.5">Half</option>
+                                <option value="1">Full</option>
+                            </select>
+                        </span>
+
+                        <span>
+                            <button class="button" type="submit">
+                                Add to cart
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </span>
+                    </form>
+                    <button class="button cancel">
+                        Cancel
+                        <i class="far fa-window-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="body-food-sction">
+            <h3>More Foods Like this</h3>
+            <!-- How food is displayed section for grid works -->
+            <div class="food-grid-display">
+                <!-- Product work starts-->
+                <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-up">
+                                <div class="food details">
+                                    <h4>Food.name</h4>
+                                    <h4>Rate</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/order-form.html">
+                                        <button class="bag-btn order">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Order Now
+
+                                        </button>
+                                    </a>
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-details overlay-details-down">
+                                <div class="food details">
+                                    <h4>Rating 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+                <!-- Product work starts-->
+                <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-up">
+                                <div class="food details">
+                                    <h4>Food.name</h4>
+                                    <h4>Rate</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/order-form.html">
+                                        <button class="bag-btn order">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Order Now
+
+                                        </button>
+                                    </a>
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-details overlay-details-down">
+                                <div class="food details">
+                                    <h4>Rating 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+                <!-- Product work starts-->
+                <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-up">
+                                <div class="food details">
+                                    <h4>Food.name</h4>
+                                    <h4>Rate</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/order-form.html">
+                                        <button class="bag-btn order">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Order Now
+
+                                        </button>
+                                    </a>
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-details overlay-details-down">
+                                <div class="food details">
+                                    <h4>Rating 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+                <!-- Product work starts-->
+                <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-up">
+                                <div class="food details">
+                                    <h4>Food.name</h4>
+                                    <h4>Rate</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/order-form.html">
+                                        <button class="bag-btn order">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Order Now
+
+                                        </button>
+                                    </a>
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-details overlay-details-down">
+                                <div class="food details">
+                                    <h4>Rating 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+                <!-- Product work starts-->
+                <div class="overall-box">
+                    <div class="top-food">
+                        <div class="plate food-1">
+                            <img alt="Food-1" src="/assets/header.jpg"/>
+                            <div class="overlay-details overlay-details-up">
+                                <div class="food details">
+                                    <h4>Food.name</h4>
+                                    <h4>Rate</h4>
+                                </div>
+                                <div class="cart">
+                                    <a href="/order-form.html">
+                                        <button class="bag-btn order">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Order Now
+
+                                        </button>
+                                    </a>
+                                    <a href="/food-profile.html">
+                                        <button class="bag-btn view" data-id="1">
+                                            <i class="fas fa-info-circle"></i>
+                                            view-more
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-details overlay-details-down">
+                                <div class="food details">
+                                    <h4>Rating 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product work ends -->
+            </div>
+            <input class="button" type="button" value="Browse all foods!">
+            <hr>
+        </div>
+        <!-- order-form ends -->
+    </body>
+</html>

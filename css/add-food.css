@@ -1,0 +1,70 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 0.5s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.add-food-container {
+  margin: 90px 1rem 1rem 1rem;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.add-food-container .text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+}
+.add-food-container .form-section {
+  width: 100%;
+  border: 1px solid var(--SecondaryColor);
+  box-shadow: 2px 2px rgba(60, 218, 218, 0.418);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.add-food-container .form-section form {
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+}
+.add-food-container .form-section form span {
+  display: flex;
+  margin: 10px;
+  width: calc(100% - 2rem);
+  align-items: center;
+  justify-content: space-between;
+}
+.add-food-container .form-section form input {
+  display: flex;
+  margin: 0.5rem;
+}
+.add-food-container .form-section form span input {
+  width: calc(100% / 2 - 1rem);
+}
+.add-food-container .form-section form span #image {
+  height: 40px;
+  border: 1px dashed;
+  border-radius: 10px;
+}
+.add-food-container .form-section form textarea {
+  height: 100px;
+  margin: 0.5rem 0;
+  resize: none;
+}
+@media only screen and (max-width: 720px) {
+  .add-food-container {
+    width: 100%;
+  }
+}

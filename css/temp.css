@@ -1,0 +1,21 @@
+#drag_down{
+    position: fixed;
+    width:100px;
+    height: 100px;
+    background-color: rgba(22,22,22,0.4);
+    margin-top:0px;
+}
+
+#tooltip{
+    margin-left: 25px;
+    width:50px;
+    height:50px;
+    background-color: red;
+    transform:rotate(45deg);
+}
+#user_options{
+    position:absolute;
+    background-color: pink;
+    height:30px;
+    width:100%;
+}

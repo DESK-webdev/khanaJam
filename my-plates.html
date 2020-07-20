@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Font Awesome Import Start -->
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" rel="stylesheet"/>
+        <!-- Font Awesome Import End -->
+        <meta charset="UTF-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>My Plates</title>
+        <link href="/css/myplates.css" rel="stylesheet"/>
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="my-plate-container">
+            <i class="fas fa-concierge-bell">
+                <h3>My Recents</h3>
+            </i>
+            <div class="search-body">
+                <h3>Search Food && Hotel</h3>
+                <div class="search">
+                    <input class="Search" id="" name="Search-foods-hotels" placeholder="Type here . . . " type="text"/>
+                    <button class="button" type="submit">Search</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="all-tranisition-table"> 
+                <span>
+                    <h3>Pending-order</h3>
+                    <div class="filter">
+                        <i class="fas fa-sort-amount-down-alt" title="Filter by"></i>
+                        <select class="button" id="filter by" name="">
+                            <option class="button" value="date">By Date</option>
+                            <option class="button" value="hotel">By Hotel</option>
+                        </select>
+                    </div>
+                </span>
+                
+                <div class="pending-order">
+                    <table>
+                        <tr>
+                            <th>Hotel</th>
+                            <th>Time (Minutes)</th>
+                            <th>Food Name</th>
+                            <th>Quantitiy</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Bibek Hotel And Restaurant</td>
+                            <td>12</td>
+                            <td>Pizza</td>
+                            <td>
+                                1
+                            </td>
+                            <td>Rs. 2000</td>
+                            <td>
+                                <div class="status">
+                                    <button class="button delete" title="delete" type="submit">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                    <a href="/order-form.html">
+                                        <button class="button order" title="Re-order">
+                                            <i class="fas fa-retweet"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr/>
+                <div class="Completed-order">
+                    <span>
+                        <h3>Completed-order</h3>
+                        <div class="filter">
+                            <i class="fas fa-sort-amount-down-alt" title="Filter by"></i>
+                            <select class="button" id="filter by" name="">
+                                <option class="button" value="date">By Date</option>
+                                <option class="button" value="hotel">By Hotel</option>
+                            </select>
+                        </div>
+                    </span>
+                    <table>
+                        <tr>
+                            <th>Hotel</th>
+                            <th>Timestamp</th>
+                            <th>Food Name</th>
+                            <th>Quantitiy</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Bibek Hotel And Restaurant</td>
+                            <td>12</td>
+                            <td>Pizza</td>
+                            <td>
+                                1
+                            </td>
+                            <td>Rs. 2000</td>
+                            <td>
+                                <div class="status">
+                                    <button class="button delete" title="delete" type="submit">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                    <a href="/order-form.html">
+                                        <button class="button order" title="Re-order">
+                                            <i class="fas fa-retweet"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr/>
+                <div class="Rejected-order">
+                    <span>
+                        <h3>Rejected-order</h3>
+                        <div class="filter">
+                            <i class="fas fa-sort-amount-down-alt" title="Filter by"></i>
+                            <select class="button" id="filter by" name="">
+                                <option class="button" value="date">By Date</option>
+                                <option class="button" value="hotel">By Hotel</option>
+                            </select>
+                        </div>
+                    </span>
+                    <table>
+                        <tr>
+                            <th>Hotel</th>
+                            <th>Timestamp</th>
+                            <th>Food Name</th>
+                            <th>Quantitiy</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Bibek Hotel And Restaurant</td>
+                            <td>12</td>
+                            <td>Pizza</td>
+                            <td>
+                                1
+                            </td>
+                            <td>Rs. 2000</td>
+                            <td>
+                                <div class="status">
+                                    <button class="button delete" title="delete" type="submit">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+
+                                    <a href="/order-form.html">
+                                        <button class="button order" title="Re-order">
+                                            <i class="fas fa-retweet"></i>
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="order-container">
+            <h2>Order Food</h2>
+            <div class="actual-order-container">
+                <div class="plate">
+                    <img alt="" src="/assets/header.jpg">
+
+                </div>
+
+                <div class="order-form" id="order-form">
+                    <div class="food-details">
+                        <h4>food.name</h4>
+                        <h4>food.rating</h4>
+                        <h4>hotel.name</h4>
+                        <h4>hote.address</h4>
+                    </div>
+                    <form action="" method="post">
+                        <span>
+                            <label for="time to arrive">Ready food in</label>
+                            <input max="60" min="0" name="time to arrive" oninput="time.value = this.value" step="5" type="range" value="0"/>
+                            <output id="time">0
+                            </output>
+                            &nbsp; Minutes
+                        </span>
+                        <br/>
+                        <span>
+                            <label for="No. of Plates">No of Plates</label>
+                            <input max="10" min="0" name="No. of Plates" oninput="plates.value = this.value" step="1" type="range" value="0"/>
+                            <output id="plates">0
+                            </output>
+                            &nbsp; Plates
+                        </span>
+                        <span>
+                            <label for="quantity">Quantitiy</label>
+                            <select id="" name="quantity" class="button">
+
+                                <option value="0.5">Half</option>
+                                <option value="1">Full</option>
+                            </select>
+                        </span>
+
+                        <span>
+                            <button class="button" type="submit">
+                                Add to cart
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </span>
+                    </form>
+                    <button class="button cancel">
+                        Cancel
+                        <i class="far fa-window-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </body>
+    <script>
+    document.querySelector('.delete').addEventListener('click', () => {
+    console.log('hello')
+    document.querySelector('.fa-trash-alt').style.animation =
+      'var(--mainanimation)'
+    })
+      document.querySelector('.order').addEventListener('click', ()=>{
+        console.log('ok')
+        document.querySelector('.order-container').classList.add('order-container-display')
+        document.querySelector('.my-plate-container').style.display = 'none'
+      })
+      document.querySelector('.cancel').addEventListener('click', ()=>{
+        console.log('ok')
+        document.querySelector('.order-container').classList.remove('order-container-display')
+        document.querySelector('.my-plate-container').style.display = 'initial'
+      })
+</script>
+</html>
+    </body>
+</html>
+</html>

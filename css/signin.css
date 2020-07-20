@@ -1,0 +1,206 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 1s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+.user-container {
+  margin: 90px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 90px);
+}
+
+.user-container .login,
+.user-container .signup {
+  position: relative;
+
+  min-height: 500px;
+  min-width: 900px;
+  border: solid aquamarine 2px;
+  border-radius: 10px;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  display: flex;
+}
+
+.user-container .login .login-right,
+.user-container .signup .signup-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user-container .login .login-right .upper-text-section,
+.user-container .signup .signup-left .upper-text-section {
+  text-transform: capitalize;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.user-container .login .login-right .fields-section,
+.user-container .signup .signup-left .fields-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.2rem;
+}
+.user-container .login .login-right .fields-section .id-password,
+.user-container .signup .signup-left .fields-section .id-password {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.user-container .login .login-right .fields-section .id-password input,
+.user-container .signup .signup-left .fields-section .id-password input {
+  margin: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+}
+.user-container .signup .signup-left .fields-section .id-password .partof {
+  margin: 10px;
+  size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.user-container
+  .signup
+  .signup-left
+  .fields-section
+  .id-password
+  .partof
+  input {
+  height: initial;
+  width: initial;
+}
+.RememberMe,
+.privacy-click {
+  margin: 10px;
+}
+
+.RememberMe input,
+.privacy-click input {
+  cursor: pointer;
+}
+.button {
+  background: rgba(138, 48, 226, 0.8);
+  border-radius: 10px;
+  border: none;
+  color: var(--PrimaryBlack);
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  cursor: pointer;
+}
+
+.button:hover {
+  scale: 1.11;
+  color: var(--PrimaryWhite);
+}
+.lower-section a {
+  text-decoration: none;
+  color: inherit;
+}
+.login-left,
+.signup-right {
+  background: url(/assets/signin-right-image.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+.signup-right {
+  border-radius: 10px 0 0 10px;
+}
+.login-left .Text-writing,
+.signup-right .Text-writing {
+  margin: 20px;
+  background-color: aliceblue;
+  opacity: 0.4;
+  border-radius: 10px;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+}
+.login-left .Text-writing h2,
+.signup-right .Text-writing h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.display {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 940px) {
+  .user-container .login,
+  .user-container .signup {
+    padding: 10px 0;
+    width: 100%;
+    height: calc(100% - 90px);
+    min-width: 400px;
+  }
+  .user-container .login {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-container .signup {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-container .login .login-right,
+  .user-container .signup .signup-left {
+    width: 100%;
+  }
+  .user-container .login .login-left,
+  .user-container .signup .signup-right {
+    display: flex;
+    background: initial;
+  }
+  .user-container .login .login-right .social-media-login-sction,
+  .user-container .signup .signup-left .social-media-signup-sction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-container .login .login-right .social-media-login-sction .button,
+  .user-container .signup .signup-left .social-media-signup-sction .button {
+    margin: 5px 0;
+  }
+  .lower-section {
+    margin: 10px 0 0 0;
+  }
+  .login-left .Text-writing,
+  .signup-right .Text-writing {
+    width: 100%;
+    margin: 10px;
+  }
+}
+.button a {
+  text-decoration: none;
+  color: var(--PrimaryBlack);
+}

@@ -1,0 +1,176 @@
+:root {
+  --PrimaryColor: rgba(88, 74, 144, 1);
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 0.5s ease;
+  --mainLetterSpacing: 1.5px;
+  --mainanimation: 0.2s animator;
+}
+@keyframes animator {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.my-plate-container {
+  margin-top: 90px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: column;
+}
+.my-plate-container .all-tranisition-table {
+  margin: 1rem 0;
+  width: 100%;
+}
+.my-plate-container .all-tranisition-table span h3 {
+  margin: 1rem 0;
+}
+.my-plate-container .all-tranisition-table span .filter {
+  margin: 1rem 0;
+}
+.my-plate-container .all-tranisition-table .pending-order,
+.my-plate-container .all-tranisition-table .Completed-order,
+.my-plate-container .all-tranisition-table .Rejected-order {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.my-plate-container .all-tranisition-table .pending-order table,
+.my-plate-container .all-tranisition-table .Completed-order table,
+.my-plate-container .all-tranisition-table .Rejected-order table {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.my-plate-container .all-tranisition-table .pending-order table th,
+.my-plate-container .all-tranisition-table .Completed-order table th,
+.my-plate-container .all-tranisition-table .Rejected-order table th {
+  min-height: 50px;
+  background: rgba(153, 139, 139, 0.5);
+  border-radius: 10px;
+  font-style: italic;
+}
+.my-plate-container .all-tranisition-table .pending-order table td,
+.my-plate-container .all-tranisition-table .Completed-order table td,
+.my-plate-container .all-tranisition-table .Rejected-order table td {
+  min-height: 50px;
+  background: transparent;
+  border-radius: 10px;
+  background: rgb(234, 228, 255);
+}
+option {
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.order-container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  border: 1px solid royalblue;
+  border-radius: 10px;
+  box-shadow: rgba(44, 177, 177, 0.418) 5px 5px;
+  margin: 1rem 0;
+  display: none;
+}
+.order-container h2 {
+  margin: 0.5rem 0;
+}
+
+.order-container .actual-order-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background: blueviolet;
+}
+.order-container .actual-order-container .plate {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.order-container .actual-order-container .plate img {
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+.order-container .actual-order-container .plate img:hover {
+  scale: 1.2;
+}
+.order-container .actual-order-container .order-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.order-container .actual-order-container .order-form form span {
+  display: flex;
+  margin: 1rem 0;
+}
+.order-container .actual-order-container .order-form form span button,
+.order-container .actual-order-container .order-form form span label,
+.order-container .actual-order-container .order-form form span input {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.order-container .actual-order-container .order-form .food-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+body .order-container-display {
+  display: flex;
+  position: absolute;
+  background: rebeccapurple;
+  width: 100%;
+  height: 95%;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 940px) {
+  .actual-order-container {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+}

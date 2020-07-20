@@ -1,0 +1,194 @@
+:root {
+  --primaryColor: #f09d51;
+  --SecondaryColor: #f09d51;
+  --PrimaryWhite: #ffffff;
+  --PrimaryBlack: #000000;
+  --mainTranisition: all 1s ease;
+  --mainLetterSpacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monospace', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}
+/* NavBar Starts */
+.navbar {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  top: 0px;
+  justify-content: space-between;
+  position: fixed;
+  padding: 1rem;
+  border: 1px solid;
+  background: var(--PrimaryWhite);
+  /* overflow-x: hidden; */
+}
+.navbar .main-logo {
+  color: var(--PrimaryBlack);
+  font-size: 1.5rem;
+}
+.navbar a,
+.navbar p {
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--PrimaryBlack);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar p:hover {
+  background: #3498db;
+}
+.hamburger {
+  display: none;
+}
+/* Navbar Ends */
+button {
+  size: 1.5rem;
+  color: green;
+}
+
+.nightmode {
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin: 0 0 0 10px;
+}
+.navbar .Further-pages-navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1px;
+}
+.navbar .Further-pages-navbar a,
+.navbar .Further-pages-navbar p {
+  margin: 10px;
+}
+.darkmode {
+  background: var(--PrimaryBlack);
+  color: var(--PrimaryWhite);
+}
+
+.main-body {
+  padding: 90px 0 0 0;
+}
+
+.nav-up {
+  top: -90px;
+}
+
+.navbar .Further-pages-navbar .Login-profile {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px 10px 0 0px;
+}
+
+.navbar .Further-pages-navbar .Login-profile .dropdown-menus {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem 0;
+  top: 50px;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+  z-index: 1;
+  justify-content: center;
+  background: #f1f1f1;
+}
+
+.navbar .Further-pages-navbar .Login-profile .active {
+  display: flex;
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+}
+.navbar .Further-pages-navbar .clicked {
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+  background: #3498db;
+}
+.navbar .Further-pages-navbar .Login-profile .dropdown-menus li {
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+}
+.navbar .Further-pages-navbar .Login-profile .dropdown-menus li:hover {
+  letter-spacing: var(--mainLetterSpacing);
+  transition: var(--mainTranisition);
+  cursor: pointer;
+  background: gray;
+}
+.navbar .Further-pages-navbar .Login-profile .dropdown-menus .incart {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: start;
+  align-items: center;
+}
+
+.bag-btn,
+.button {
+  background: var(--SecondaryColor);
+  border-radius: 10px;
+  border: none;
+  color: var(--PrimaryBlack);
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: var(--mainTranisition);
+  letter-spacing: var(--mainLetterSpacing);
+  cursor: pointer;
+}
+.bag-btn:hover,
+.button:hover {
+  transform: scale(1.11);
+  color: var(--PrimaryWhite);
+}
+
+/* navBar mobile css starts */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    font-size: 1.75rem;
+    display: initial;
+  }
+  .navbar .Further-pages-navbar {
+    display: none;
+  }
+  .navbar {
+    height: auto;
+  }
+  .navbar .main-logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .display {
+    display: flex;
+  }
+  .click-hamburger {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* navBar mobile css starts */
